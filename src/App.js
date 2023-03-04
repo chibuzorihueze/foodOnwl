@@ -1,13 +1,10 @@
-import React from 'react'
-import Nav from './Components/nav'
-
-
+import React from "react";
+import Home from "./pages/Home";
 
 const App = () => {
   return (
-    <Nav/>
-  )
-}
+    <Home/>
+  );
+};
 
-export default App
-
+export default App;
