@@ -26,7 +26,7 @@ const Home = () => {
             <form className="hero_input relative flex items-center border h-10 rounded">
               <input
                 type="search"
-                className="w-11/12 bg-transparent border-none focus:border-none outline-none text-white placeholder:text-zinc-200 pl-2 h-full font-semibold"
+                className="w-11/12 bg-transparent border-none focus:border-none outline-none text-white placeholder:text-zinc-200 placeholder:font-normal pl-2 h-full font-semibold"
                 placeholder="Search Location"
               />
               <div className="bg-[#FF9900] rounded-tr rounded-br flex h-full items-center justify-center py-1 w-1/12 cursor-pointer">
