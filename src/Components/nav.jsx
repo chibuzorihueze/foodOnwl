@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../assets/foodOnwl.png";
 import { AiOutlineUser, AiOutlineShoppingCart } from "react-icons/ai";
+import OWButton from "./common/buttons/Button";
 
 const Navbar = () => {
   return (
@@ -14,9 +15,9 @@ const Navbar = () => {
             <div className="mr-8">
               <AiOutlineShoppingCart />
             </div>
-            <button className="bg-[#229900] hover:bg-[#FF9900] text-white font-bold py-2 px-4 rounded">
-              Sign up
-            </button>
+            <OWButton className="btns_green" disabled>
+              Sign Up
+            </OWButton>
             <div className="rounded-full border border-[#BDBDBD] bg-[#EAEAEA] ml-6 p-2.5 ">
               <AiOutlineUser />
             </div>

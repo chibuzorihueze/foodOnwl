@@ -1,3 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    --on-orange: #e59a51;
+  }
+
+  *,
+  *::after,
+  *::before {
+    margin: unset;
+    padding: unset;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .on_container {
+    @apply container mx-auto;
+  }
+  .btns {
+    @apply py-2 px-4 font-semibold rounded cursor-pointer;
+  }
+  .btns_green {
+    @apply bg-[#229900] hover:bg-[#28b300] text-white;
+  }
+}
