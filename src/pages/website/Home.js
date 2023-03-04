@@ -60,7 +60,7 @@ const Home = () => {
         <div className="categories__list grid grid-cols-8 gap-x-8 my-4">
           {foodCategories.map(({ id, title, imgSrc }) => (
             <div
-              className="border h-[100px] rounded w-30 flex--row-center cursor-pointer"
+              className="border h-[100px] rounded w-30 flex--col-center cursor-pointer text-sm gap-y-2"
               key={id}
             >
               <img src={imgSrc} alt={title} />
