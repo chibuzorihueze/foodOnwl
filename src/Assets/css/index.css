@@ -5,6 +5,7 @@
 @layer base {
   :root {
     --on-orange: #e59a51;
+    --on-orange-light: #ff9900;
   }
 
   *,
@@ -14,6 +15,16 @@
     padding: unset;
     box-sizing: border-box;
     scroll-behavior: smooth;
+  }
+}
+@layer components {
+  .hero_left {
+    @apply bg-cover bg-center;
+    background: url("../images/home/back_01.jpg") no-repeat no-repeat;
+    background-color: grey;
+    background-blend-mode: multiply;
+    background-size: cover;
+
   }
 }
 
