@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -16,16 +18,24 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
   }
+  html,
+  body {
+    font-family: "Manrope", sans-serif;
+  }
 }
 @layer components {
-  .hero_left {
-    @apply bg-cover bg-center;
+  /* Hero Section */
+  .hero__container {
+    @apply h-[325px] grid grid-cols-2;
+  }
+  .hero__left {
+    @apply bg-cover bg-center flex items-center justify-center text-white;
     background: url("../images/home/back_01.jpg") no-repeat no-repeat;
     background-color: grey;
     background-blend-mode: multiply;
     background-size: cover;
-
   }
+  /* End of Hero Section */
 }
 
 @layer utilities {
@@ -37,5 +47,8 @@
   }
   .btns_green {
     @apply bg-[#229900] hover:bg-[#28b300] text-white;
+  }
+  .flex--row-center {
+    @apply flex items-center justify-center;
   }
 }

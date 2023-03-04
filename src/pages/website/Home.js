@@ -2,14 +2,26 @@ import React from "react";
 import { HiLocationMarker, HiOutlineSearch } from "react-icons/hi";
 import Navbar from "../../components/nav";
 import ChangeLocationImg from "../../assets/images/home/change_location.png";
+import { LeafImg } from "../../assets/images";
+
+const foodCategories = [
+  { id: 0, title: "Fast Food", imgSrc: LeafImg },
+  { id: 1, title: "Breakfast" },
+  { id: 2, title: "Natives" },
+  { id: 3, title: "Steaks" },
+  { id: 4, title: "Pastries" },
+  { id: 5, title: "Donuts" },
+  { id: 6, title: "Tea" },
+  { id: 7, title: "Bakery" },
+];
 
 const Home = () => {
   return (
     <>
       <Navbar />
-      <div className="border h-[325px] grid grid-cols-2">
-        <div className="hero_left flex items-center justify-center text-white">
-          <div className=" w-8/12 space-y-2">
+      <div className="hero__container">
+        <div className="hero__left">
+          <div className="w-8/12 space-y-2">
             <div className="heading flex items-center justify-between">
               <div className="flex items-center">
                 <HiLocationMarker size={30} />
@@ -35,6 +47,19 @@ const Home = () => {
         </div>
         <div>Col 2</div>
       </div>
+      <section className="categories on_container py-10">
+        <h3 className="font-semibold text-lg">Categories</h3>
+        <div className="categories__list grid grid-cols-8 gap-x-8 my-4">
+          {foodCategories.map(({ id, title }) => (
+            <div
+              className="border h-[100px] rounded w-30 flex--row-center cursor-pointer"
+              key={id}
+            >
+              {title}
+            </div>
+          ))}
+        </div>
+      </section>
     </>
   );
 };
