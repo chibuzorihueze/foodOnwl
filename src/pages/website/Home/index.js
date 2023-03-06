@@ -41,7 +41,7 @@ const Home = () => {
         <div>Col 2</div>
       </div>
       <Categories />
-      <Card title="Resturant near you" content="This is the content of my card." />
+      <Card title="Resturants near you" />
     </>
   );
 };
