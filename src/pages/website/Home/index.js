@@ -4,6 +4,9 @@ import Navbar from "../../../components/nav";
 import ChangeLocationImg from "../../../assets/images/home/change_location.png";
 
 import { Categories } from "./sections";
+import Card from "../../../components/card";
+
+
 
 const Home = () => {
   return (
@@ -38,6 +41,7 @@ const Home = () => {
         <div>Col 2</div>
       </div>
       <Categories />
+      <Card title="Resturant near you" content="This is the content of my card." />
     </>
   );
 };

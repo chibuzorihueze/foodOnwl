@@ -22,6 +22,10 @@
   body {
     font-family: "Manrope", sans-serif;
   }
+
+  body{
+    padding-bottom: 500px;
+  }
 }
 @layer components {
   /* Hero Section */
