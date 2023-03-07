@@ -17,13 +17,28 @@ const foodCard = [
     title: "Cusine",
     imgSrc: Sandwich,
   },
+  {
+    id: 3,
+    title: "Cusine",
+    imgSrc: Sandwich,
+  },
+  {
+    id: 4,
+    title: "Cusine",
+    imgSrc: Sandwich,
+  },
+  {
+    id: 5,
+    title: "Cusine",
+    imgSrc: Sandwich,
+  },
 ];
 
 const Card = ({ title }) => {
     return (
       <div className="w-[80%] mx-auto">
         <h2 className="card-title font-bold text-[18px] mb-8">{title}</h2>
-        <div className="grid grid-cols-3 gap-x-12">
+        <div className="grid grid-cols-3 gap-x-14 gap-y-14">
           {foodCard.map(({ id, title, imgSrc }) => (
             <div
               className="w-[389px] h-[188px]flex cursor-pointer text-sm flex-col"

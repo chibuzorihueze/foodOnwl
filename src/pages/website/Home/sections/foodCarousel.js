@@ -55,7 +55,7 @@ const FoodCarousel = () => {
     <Splide options={options}>
       {foodItems.map((foodItem) => (
         <SplideSlide key={foodItem.id}>
-          <div className="w-[379px] h-[175px] flex justify-center items-center">
+          <div className="w-[379px] h-[175px] flex justify-center items-center ml-4">
             <img
               src={foodItem.imgSrc}
               alt={foodItem.title}

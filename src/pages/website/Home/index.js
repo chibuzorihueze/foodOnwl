@@ -44,7 +44,7 @@ const Home = () => {
         </div>
         {/* carosel block */}
         <div className="bg-[#f6f6f6]">
-          <h3 className="mb-8 ">Today’s Deals</h3>
+          <h3 className="mb-8 font-bold ml-4 pt-4">Today’s Deals</h3>
           <FoodCarousel/>
         </div>
       </div>
