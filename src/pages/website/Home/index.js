@@ -2,11 +2,11 @@ import React from "react";
 import { HiLocationMarker, HiOutlineSearch } from "react-icons/hi";
 import Navbar from "../../../components/nav";
 import ChangeLocationImg from "../../../assets/images/home/change_location.png";
-import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/dist/css/themes/splide-default.min.css";
 
 import { Categories } from "./sections";
 import Card from "../../../components/card";
+import FoodCarousel from './sections/foodCarousel';
 
 // splide setup code
 
@@ -43,7 +43,9 @@ const Home = () => {
           </div>
         </div>
         {/* carosel block */}
-        <div>Col 2</div>
+        <div>Col 2
+          <FoodCarousel/>
+        </div>
       </div>
       <Categories />
       <Card title="Resturants near you" />
