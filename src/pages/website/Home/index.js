@@ -43,7 +43,8 @@ const Home = () => {
           </div>
         </div>
         {/* carosel block */}
-        <div>Col 2
+        <div className="bg-[#f6f6f6]">
+          <h3 className="mb-8 ">Today’s Deals</h3>
           <FoodCarousel/>
         </div>
       </div>
