@@ -2,9 +2,13 @@ import React from "react";
 import { HiLocationMarker, HiOutlineSearch } from "react-icons/hi";
 import Navbar from "../../../components/nav";
 import ChangeLocationImg from "../../../assets/images/home/change_location.png";
+import { Splide, SplideSlide } from "@splidejs/react-splide";
+import "@splidejs/splide/dist/css/themes/splide-default.min.css";
 
 import { Categories } from "./sections";
 import Card from "../../../components/card";
+
+// splide setup code
 
 
 
@@ -38,6 +42,7 @@ const Home = () => {
             </form>
           </div>
         </div>
+        {/* carosel block */}
         <div>Col 2</div>
       </div>
       <Categories />

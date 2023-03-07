@@ -22,7 +22,7 @@ const foodCard = [
 const Card = ({ title }) => {
     return (
       <div className="w-[80%] mx-auto">
-        <h2 className="card-title font-bold text-[18px]">{title}</h2>
+        <h2 className="card-title font-bold text-[18px] mb-8">{title}</h2>
         <div className="grid grid-cols-3 gap-x-12">
           {foodCard.map(({ id, title, imgSrc }) => (
             <div
