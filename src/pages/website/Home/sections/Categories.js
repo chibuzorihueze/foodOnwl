@@ -23,7 +23,7 @@ const foodCategories = [
 const Categories = () => (
   <section className="categories on_container py-10">
     <h3 className="font-semibold text-lg">Categories</h3>
-    <div className="categories__list grid grid-cols-8 gap-x-8 my-4">
+    <div className="categories__list grid grid-cols-8 gap-x-6 my-4 border-b border-[#e0e0e0] pb-12">
       {foodCategories.map(({ id, title, imgSrc }) => (
         <div
           className="border h-[100px] rounded w-30 flex--col-center cursor-pointer text-sm gap-y-2"
