@@ -2,6 +2,7 @@ import React from "react";
 import { ChikenRep, Menuhero } from "../../../assets/images/home/Menu_img";
 import Navbar from "./../../../components/nav2";
 import { Star } from "./../../../assets/images/";
+import { Review } from "./sections";
 
 const Menu = () => {
   return (
@@ -41,15 +42,17 @@ const Menu = () => {
             <p className="text-center">Delivery fee</p>
           </div>
           <div className="flex justify-between">
-  <div className="h-[70px] border w-[160px] flex flex-col justify-center">
-    <h3 className="text-center">15 - 24mins</h3>
-    <p className="text-center">Delivery time</p>
-  </div>
-  <div className="bg-[#ff9900] rounded text-[#fff] w-[138px] h-[34px] flex justify-center items-center ml-[700px]">Group Order</div>
-</div>
-
+            <div className="h-[70px] border w-[160px] flex flex-col justify-center">
+              <h3 className="text-center">15 - 24mins</h3>
+              <p className="text-center">Delivery time</p>
+            </div>
+            <div className="bg-[#ff9900] rounded text-[#fff] w-[138px] h-[34px] flex justify-center items-center ml-[700px]">
+              Group Order
+            </div>
+          </div>
         </div>
-        
+
+        <Review/>
       </div>
     </>
   );
