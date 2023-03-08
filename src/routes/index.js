@@ -3,6 +3,7 @@ import { createBrowserRouter } from "react-router-dom";
 import ErrorBoundary from "../components/hoc/ErrorBoundary";
 
 const Home = lazy(() => import("../pages/website/Home"));
+const Menu = lazy(() => import("../pages/website/Home/Menu"));
 const NotFound = lazy(() => import("../pages/NotFound"));
 
 const router = createBrowserRouter([
@@ -12,6 +13,12 @@ const router = createBrowserRouter([
     errorElement: <ErrorBoundary />,
     hasErrorBoundary: true,
   },
+  {
+  path: "/menu",
+  children: [{ element: <Menu /> }],
+  errorElement: <ErrorBoundary />,
+  hasErrorBoundary: true,
+},
   { path: "*", element: <NotFound /> },
 ]);
 
