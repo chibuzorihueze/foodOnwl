@@ -1,8 +1,11 @@
 import React from 'react'
+import Navbar from './../../../components/nav2';
 
 const Menu = () => {
   return (
-    <div>Hello</div>
+    <>
+    <Navbar/>
+    </>
   )
 }
 

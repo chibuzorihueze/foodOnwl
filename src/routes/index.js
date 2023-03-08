@@ -15,7 +15,7 @@ const router = createBrowserRouter([
   },
   {
   path: "/menu",
-  children: [{ element: <Menu /> }],
+  children: [{index: true, element:<Menu />  }],
   errorElement: <ErrorBoundary />,
   hasErrorBoundary: true,
 },

@@ -8,7 +8,6 @@ import { Categories } from "./sections";
 import Card from "../../../components/card";
 import FoodCarousel from './sections/foodCarousel';
 
-// splide setup code
 
 
 
