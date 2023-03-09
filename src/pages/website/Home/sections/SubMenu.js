@@ -29,8 +29,8 @@ const SubMenu = () => {
       <div className="pt-14">
         <h1 className="mb-2">What's new</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-        <div className="flex flex-col space-y-6 mt-4">
-          <div className="border flex w-[810px] h-[135px] space-x-8">
+        <div className="flex flex-col space-y-6 mt-4 ">
+          <div className="border flex w-[810px] h-[135px] space-x-8 justify-between items-center ">
             <div>
               <img src={Food1} alt="foodImage" />
             </div>
@@ -39,10 +39,18 @@ const SubMenu = () => {
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
               <p>from $120.00</p>
             </div>
-            <div className="border rounded w-[72px] h-[30px] ">button</div>
+            <div className="flex justify-between items-center w-[158px] h-[56px] rounded-full bg-gray-200 px-4">
+              <button className="w-[32px] h-[32px] rounded-full bg-[#ff9900]">
+                -
+              </button>
+              <p>2</p>
+              <button className="w-[32px] h-[32px] rounded-full bg-[#ff9900]">
+                +
+              </button>
+            </div>
           </div>
 
-          <div className="border flex w-[810px] h-[135px] space-x-8">
+          <div className="border flex w-[810px] h-[135px] space-x-8 justify-between items-center ">
             <div>
               <img src={Food2} alt="foodImage" />
             </div>
@@ -51,7 +59,15 @@ const SubMenu = () => {
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
               <p>from $120.00</p>
             </div>
-            <div className="border rounded w-[72px] h-[30px] ">button</div>
+            <div className="flex justify-between items-center w-[158px] h-[56px] rounded-full bg-gray-200 px-4">
+              <button className="w-[32px] h-[32px] rounded-full bg-[#ff9900]">
+                -
+              </button>
+              <p>2</p>
+              <button className="w-[32px] h-[32px] rounded-full bg-[#ff9900]">
+                +
+              </button>
+            </div>
           </div>
         </div>
       </div>

@@ -8,6 +8,7 @@ const Menu = () => {
   return (
     <>
       <Navbar />
+      
       <div className="flex justify-center items-center w-[75%] mb-[20px]">
         <div className="mx-auto my-auto relative">
           <img className="w-[810px] h-[200px]" src={Menuhero} alt="hero img" />
