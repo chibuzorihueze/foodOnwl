@@ -2,7 +2,7 @@ import React from "react";
 import { ChikenRep, Menuhero } from "../../../assets/images/home/Menu_img";
 import Navbar from "./../../../components/nav2";
 import { Star } from "./../../../assets/images/";
-import { Review } from "./sections";
+import { Review, SubMenu } from "./sections";
 
 const Menu = () => {
   return (
@@ -51,8 +51,8 @@ const Menu = () => {
             </div>
           </div>
         </div>
-
-        <Review/>
+        <Review />
+        <SubMenu />
       </div>
     </>
   );

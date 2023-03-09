@@ -4,7 +4,7 @@ import { Star } from "../../../../assets/images";
 const Review = () => {
   return (
     <>
-      <div className="mt-[60px] border-t-2">
+      <div className="mt-[60px] border-t-2 mb-8">
         <h3 className="font-bold text-[18px] mt-[60px] mb-[20px]">
           User Reviews
         </h3>
