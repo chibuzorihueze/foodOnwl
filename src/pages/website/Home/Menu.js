@@ -54,6 +54,7 @@ const Menu = () => {
         <Review />
         <SubMenu />
       </div>
+      <div>test side view</div>
     </>
   );
 };
