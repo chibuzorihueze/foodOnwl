@@ -1,13 +1,14 @@
 import React from "react";
 import { ChikenRep, Menuhero } from "../../../assets/images/home/Menu_img";
-import Navbar from "./../../../components/nav2";
+import { TopNav } from "../../../components/blocks";
+
 import { Star } from "./../../../assets/images/";
 import { Review, SubMenu } from "./sections";
 
 const Menu = () => {
   return (
     <>
-      <Navbar />
+      <TopNav hasSearch />
       
       <div className="flex justify-center items-center w-[75%] mb-[20px]">
         <div className="mx-auto my-auto relative">
@@ -56,6 +57,7 @@ const Menu = () => {
         <SubMenu />
       </div>
       <div>test side view</div>
+      
     </>
   );
 };

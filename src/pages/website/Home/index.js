@@ -1,12 +1,13 @@
 import React from "react";
 import { HiLocationMarker, HiOutlineSearch } from "react-icons/hi";
-import Navbar from "../../../components/nav";
+
 import ChangeLocationImg from "../../../assets/images/home/change_location.png";
 import "@splidejs/splide/dist/css/themes/splide-default.min.css";
 
 import { Categories } from "./sections";
 import Card from "../../../components/card";
 import FoodCarousel from './sections/foodCarousel';
+import { TopNav } from "../../../components/blocks";
 
 
 
@@ -14,7 +15,7 @@ import FoodCarousel from './sections/foodCarousel';
 const Home = () => {
   return (
     <>
-      <Navbar />
+      <TopNav />
       <div className="hero__container">
         <div className="hero__left">
           <div className="w-8/12 space-y-2">
