@@ -5,12 +5,9 @@ import ChangeLocationImg from "../../../assets/images/home/change_location.png";
 import "@splidejs/splide/dist/css/themes/splide-default.min.css";
 
 import { Categories } from "./sections";
-import Card from "../../../components/card";
-import FoodCarousel from './sections/foodCarousel';
+import Card from "../../../components/common/cards/ResturantCard";
+import FoodCarousel from "./sections/foodCarousel";
 import { TopNav } from "../../../components/blocks";
-
-
-
 
 const Home = () => {
   return (
@@ -45,7 +42,7 @@ const Home = () => {
         {/* carosel block */}
         <div className="bg-[#f6f6f6]">
           <h3 className="mb-8 font-bold ml-4 pt-4">Today’s Deals</h3>
-          <FoodCarousel/>
+          <FoodCarousel />
         </div>
       </div>
       <Categories />
