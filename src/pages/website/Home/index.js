@@ -5,15 +5,16 @@ import ChangeLocationImg from "../../../assets/images/home/change_location.png";
 import "@splidejs/splide/dist/css/themes/splide-default.min.css";
 
 import { Categories } from "./sections";
-import Card from "../../../components/common/cards/ResturantCard";
+// import Card from "../../../components/common/cards/ResturantCard";
 import FoodCarousel from "./sections/foodCarousel";
 import { TopNav } from "../../../components/blocks";
+import ResturantCard from "../../../components/common/cards/ResturantCard";
 
 const Home = () => {
   return (
     <>
       <TopNav />
-      <div className="hero__container">
+      <div className="hero__container grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1">
         <div className="hero__left">
           <div className="w-8/12 space-y-2">
             <div className="heading flex items-center justify-between">
@@ -46,7 +47,7 @@ const Home = () => {
         </div>
       </div>
       <Categories />
-      <Card title="Resturants near you" />
+      <ResturantCard title="Resturants near you" />
     </>
   );
 };

@@ -20,14 +20,14 @@ const TopNav = ({ hasSearch }) => {
               />
             </div>
           )}
-          <div className="flex items-center">
-            <div className="mr-8">
-              <AiOutlineShoppingCart />
+          <div className=" hidden sm:flex items-center justify-between space-x-4">
+            <div className="">
+              <AiOutlineShoppingCart size={20} />
             </div>
             <OWButton className="btns_green" disabled>
               Sign Up
             </OWButton>
-            <div className="rounded-full border border-[#BDBDBD] bg-[#EAEAEA] ml-6 p-2.5 ">
+            <div className="rounded-full border border-[#BDBDBD] bg-[#EAEAEA]  p-2.5 ">
               <AiOutlineUser />
             </div>
           </div>

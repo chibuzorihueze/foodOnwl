@@ -30,7 +30,7 @@
 @layer components {
   /* Hero Section */
   .hero__container {
-    @apply h-[325px] grid grid-cols-2;
+    @apply h-[325px];
   }
   .hero__left {
     @apply bg-cover bg-center flex items-center justify-center text-white;
@@ -47,7 +47,7 @@
     @apply container mx-auto;
   }
   .btns {
-    @apply py-2 px-4 font-semibold rounded cursor-pointer;
+    @apply py-2 px-4 rounded cursor-pointer;
   }
   .btns_green {
     @apply bg-[#229900] hover:bg-[#28b300] text-white;
