@@ -2,38 +2,34 @@ import React from "react";
 import logo from "../../../assets/foodOnwl.png";
 import { AiOutlineUser, AiOutlineShoppingCart } from "react-icons/ai";
 import OWButton from "../../common/buttons/Button";
+import { Navbar, Nav, Form, FormControl, Button } from 'react-bootstrap';
 
 const TopNav = ({ hasSearch }) => {
   return (
-    <nav className="bg-white shadow-m">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16">
-          <div className="flex-shrink-0 flex items-center">
-            <img className="h-40 w-48" src={logo} alt="Logo" />
+    <Navbar expand="md" className=" pt-0 shadow-m mr-8">
+      <Navbar.Brand>
+        <img src={logo} alt="Logo" className="h-40 w-48"  />
+      </Navbar.Brand>
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse id="basic-navbar-nav">
+        {hasSearch && (
+          <Form inline className="flex-1 justify-center">
+            <FormControl type="text" placeholder="Search menu..." className="mr-sm-2 w-96 mx-auto" />
+          </Form>
+        )}
+        <Nav className="ml-auto align-items-center">
+          <Nav.Link href="#" className="mr-4">
+            <AiOutlineShoppingCart size={20} />
+          </Nav.Link>
+          <OWButton className="btns_green" >
+            Sign Up
+          </OWButton>
+          <div className="rounded-full border border-[#BDBDBD] bg-[#EAEAEA] p-2.5 d-flex align-items-center ml-4">
+            <AiOutlineUser />
           </div>
-          {hasSearch && (
-            <div className="flex items-center justify-center flex-1">
-              <input
-                className="h-10 w-96 bg-[#f2f2f2] rounded-lg border-2 border-gray-300 py-2 px-4 focus:outline-none focus:border-indigo-500"
-                type="text"
-                placeholder="Search menu..."
-              />
-            </div>
-          )}
-          <div className=" hidden sm:flex items-center justify-between space-x-4">
-            <div className="">
-              <AiOutlineShoppingCart size={20} />
-            </div>
-            <OWButton className="btns_green" disabled>
-              Sign Up
-            </OWButton>
-            <div className="rounded-full border border-[#BDBDBD] bg-[#EAEAEA]  p-2.5 ">
-              <AiOutlineUser />
-            </div>
-          </div>
-        </div>
-      </div>
-    </nav>
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
   );
 };
 
