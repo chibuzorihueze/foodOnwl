@@ -18,7 +18,14 @@ module.exports = {
     // => @media (min-width: 1536px) { ... }
   },
     
-    extend: {},
+    extend: {
+      
+      display: ['group-hover'],
+      flex: {
+        'row': 'row',
+        // Add other flex directions if needed
+      },
+    },
   },
   plugins: [],
 };

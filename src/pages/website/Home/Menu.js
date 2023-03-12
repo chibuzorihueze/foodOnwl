@@ -6,62 +6,63 @@ import { Review, SubMenu } from "./sections";
 
 const Menu = () => {
   return (
-    
-    <div className="w-[100%]">
-      <TopNav hasSearch />
-      
-      <div className="flex justify-center items-start w-[70%] mb-[20px]">
-        <div className="mx-auto my-auto relative">
-          <img className="w-[810px] h-[200px]" src={Menuhero} alt="hero img" />
-          <img
-            style={{ position: "absolute", top: "90px", left: "50px" }}
-            src={ChikenRep}
-            alt="food-logo"
-          />
+    <>
+      <div>
+        <TopNav hasSearch />
+        <div className="w-[100%] flex">
+          <div className="w-[70%]">
+            <div className="mx-auto my-auto relative w-[100%]">
+              <img
+                className="w-[810px] h-[200px]"
+                src={Menuhero}
+                alt="hero img"
+              />
+              <img
+                className="absolute bottom-0 left-0 w-16 md:w-20 lg:w-24 xl:w-28"
+                src={ChikenRep}
+                alt="food-logo"
+              />
+            </div>
+
+            {/* image title */}
+            <div className="w-[100%] flex flex-col sm:flex-row ">
+              <div>
+                <h1 className="text-[32px] font-bold mb-[10px]">
+                  Chiken Republic
+                </h1>
+                <p>Chiken Republic |</p>
+                <p>4.5 (300+) | 2.2km</p>
+                <p>
+                  <span className="text-[#229900] font-bold">Open Now</span> |
+                  All day
+                </p>
+                <div className="w-[100%] flex">
+                  <div className="h-[70px] border w-[160px] flex flex-col justify-center items-center">
+                    <h3 className="text-center">$0.00</h3>
+                    <p className="text-center">Delivery fee</p>
+                  </div>
+                  <div className="h-[70px] border w-[160px] flex flex-col justify-center items-center">
+                    <h3 className="text-center">$0.00</h3>
+                    <p className="text-center">Delivery fee</p>
+                  </div>
+                </div>
+              </div>
+              <div class="w-full sm:flex-row flex-col ">
+                <div class="bg-[#ff9900] rounded text-[#fff] w-[138px] h-[34px] flex justify-center items-center">
+                  Group Order
+                </div>
+                <div class="bg-[#f2f2f2] rounded text-[#000] w-[138px] h-[34px] flex justify-center items-center">
+                  More information
+                </div>
+              </div>
+            </div>
+            <Review />
+            <SubMenu/>
+          </div>
+          <div className="w-[30%] bg-blue-800">hello</div>
         </div>
       </div>
-
-      <div className="ml-[12%]  w-[75%] flex">
-        <div className="flex-grow">
-          <h1 className="text-[32px] font-bold mb-[10px]">Chiken Republic</h1>
-          <div className="flex">
-            <p>Chiken Republic |</p>
-            <img className="w-[16px] h-[16px] mt-[2px]" src={Star} alt="" />
-            <p>4.5 (300+) | 2.2km</p>
-          </div>
-
-          <div className="flex mt-[12px]">
-            <p className="flex flex-1">
-              <span className="text-[#229900] font-bold">Open Now</span> | All day
-            </p>
-            <div className=" rounded w-[169px] h-[34px] bg-[#f2f2f2] flex justify-center items-center mb-[-50px]">
-              More Information
-            </div>
-          </div>
-
-          <div className="flex mt-[30px]">
-            <div className="h-[70px] border w-[160px] flex flex-col justify-center items-center">
-              <h3 className="text-center">$0.00</h3>
-              <p className="text-center">Delivery fee</p>
-            </div>
-            <div className="flex justify-between">
-              <div className="h-[70px] border w-[160px] flex flex-col justify-center">
-                <h3 className="text-center">15 - 24mins</h3>
-                <p className="text-center">Delivery time</p>
-              </div>
-              <div className="bg-[#ff9900] rounded text-[#fff] w-[138px] h-[34px] flex justify-center items-center ml-[700px]">
-                Group Order
-              </div>
-            </div>
-          </div>
-          <Review />
-          <SubMenu />
-        </div>
-
-        <div className="w-30% bg-red-500">test side viewkkkdkdkdkdkdkdkd</div>
-      </div>
-      </div>
+    </>
   );
 };
-
 export default Menu;
