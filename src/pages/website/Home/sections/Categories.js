@@ -23,10 +23,10 @@ const foodCategories = [
 const Categories = () => (
   <section className="categories on_container py-10">
     <h3 className="font-semibold text-lg">Categories</h3>
-    <div className="categories__list grid grid-cols-8 gap-x-6 my-4 border-b border-[#e0e0e0] pb-12 ">
+    <div className="categories__list grid grid-cols-8 gap-x-6 my-4 border-b border-[#e0e0e0] pb-12 overflow-x-auto ">
       {foodCategories.map(({ id, title, imgSrc }) => (
         <div
-          className=" h-[100px] rounded w-30 flex--col-center cursor-pointer text-sm gap-y-2 bg-[#f6f6f6]"
+          className="sm:w-30 h-[100px] rounded w-30 flex--col-center cursor-pointer text-sm gap-y-2 bg-[#f6f6f6] min-w[100%]"
           key={id}
         >
           <img src={imgSrc} alt={title} />

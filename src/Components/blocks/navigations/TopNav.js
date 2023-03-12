@@ -2,7 +2,7 @@ import React from "react";
 import logo from "../../../assets/foodOnwl.png";
 import { AiOutlineUser, AiOutlineShoppingCart } from "react-icons/ai";
 import OWButton from "../../common/buttons/Button";
-import { Navbar, Nav, Form, FormControl, Button } from 'react-bootstrap';
+import { Navbar, Nav, Form, FormControl } from 'react-bootstrap';
 
 const TopNav = ({ hasSearch }) => {
   return (
@@ -21,7 +21,7 @@ const TopNav = ({ hasSearch }) => {
           <Nav.Link href="#" className="mr-4">
             <AiOutlineShoppingCart size={20} />
           </Nav.Link>
-          <OWButton className="btns_green" >
+          <OWButton className="btns_green" disabled>
             Sign Up
           </OWButton>
           <div className="rounded-full border border-[#BDBDBD] bg-[#EAEAEA] p-2.5 d-flex align-items-center ml-4">
