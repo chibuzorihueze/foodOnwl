@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -20,7 +21,8 @@
   }
   html,
   body {
-    font-family: "Manrope", sans-serif;
+    /* font-family: "Manrope", sans-serif; */
+    font-family: montserrat;
   }
 
   body{

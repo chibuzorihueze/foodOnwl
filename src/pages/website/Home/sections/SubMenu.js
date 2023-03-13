@@ -14,7 +14,7 @@ const SubMenu = () => {
       </div>
       {/* sub nav */}
       <div>
-        <div className="w-full">
+        <div className="w-full mb-8">
           <ul className="flex space-x-6 whitespace-nowrap overflow-x-auto">
             <li>WHAT'S NEW</li>
             <li>SCOOPS</li>
@@ -42,7 +42,7 @@ const SubMenu = () => {
             </p>
           </div>
         </div>
-        <div className="order-3 sm:order-none flex justify-between items-center w-full sm:w-[56px] h-[46px] rounded-full border px-8 mt-4 sm:mt-0">
+        <div className="order-3 sm:order-none flex justify-between items-center w-full sm:w-[156px] h-[46px] rounded-full border px-8 mt-4 sm:mt-0">
           <button className="w-[32px] h-[32px] rounded-full bg-[#ff9900]">
             -
           </button>
@@ -53,7 +53,7 @@ const SubMenu = () => {
         </div>
       </div>
 
-      <div className="w-full flex flex-col sm:flex-row">
+      <div className="w-full flex flex-col sm:flex-row mt-4">
         <div className="w-full flex space-x-2 ">
           <div className="order-1 sm:order-none flex-shrink-0">
             <img src={Food2} alt="foodImage" className="h-full" />
@@ -69,7 +69,7 @@ const SubMenu = () => {
             </p>
           </div>
         </div>
-        <div className="order-3 sm:order-none flex justify-between items-center w-full sm:w-[56px] h-[46px] rounded-full border px-8 mt-4 sm:mt-0">
+        <div className="order-3 sm:order-none flex justify-between items-center w-full sm:w-[156px] h-[46px] rounded-full border px-8 mt-4 sm:mt-0">
           <button className="w-[32px] h-[32px] rounded-full bg-[#ff9900]">
             -
           </button>
