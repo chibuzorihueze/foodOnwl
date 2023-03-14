@@ -79,22 +79,22 @@ const SubMenu = () => {
             key={id}
             className="flex flex-col justify-between sm:flex-row border rounded-lg p-2"
           >
-            <div className="flex space-x-2 ">
-              <div className="">
+            <div className="flex justify-start space-x-4">
+              <div>
                 <img src={img} alt="foodImage" className="h-full" />
               </div>
-              <div className="flex flex-col space-y-2">
-                <p className="text-base font-bold">{title}</p>
-                <p className="text-sm text-[#828282]">{review}</p>
-                <p className="font-bold">
-                  <span className="text-[#229900] text-[12px] font-bold">
-                    from
-                  </span>{" "}
+              <div className="flex flex-col justify-between space-y-2">
+                <div>
+                  <p className="text-base font-bold">{title}</p>
+                  <p className="text-sm text-[#828282]">{review}</p>
+                </div>
+                <p className="font-bold items-end">
+                  <span className="text-[#229900] text-xs font-bold">from</span>{" "}
                   {price}
                 </p>
               </div>
             </div>
-            <div className="flex items-center border h-fit self-end w-2/12 justify-between p-1 rounded-full font-semibold">
+            <div className="flex items-center border h-fit self-end w-4/12 lg:w-2/12 justify-between p-1 rounded-full font-semibold">
               <button className="w-[32px] h-[32px] rounded-full bg-[#ff9900] flex items-center justify-center text-white">
                 <CgMathMinus />
               </button>
