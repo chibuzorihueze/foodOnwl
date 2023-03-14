@@ -1,15 +1,16 @@
 import React from "react";
 import { Food1, Food2 } from "../../../../assets/images/home/Menu_img";
+import { CgMathMinus, CgMathPlus } from "react-icons/cg";
 
 const SubMenu = () => {
   return (
-    <div className="w-full">
+    <div className="">
       <div className=" sm:flex-row flex justify-between items-center pt-8 mb-8 ">
-        <h4 className="mr-8 text-[18px] font-bold">Menu</h4>
+        <h4 className="text-xl font-bold">Menu</h4>
         <input
           type="text"
-          placeholder="Search menu..."
-          className="w-[364px] h-[40px] bg-[#f6f6f6] px-4 rounded"
+          placeholder="Search Menu..."
+          className="w-8/12 sm:w-6/12 h-[40px] bg-[#f6f6f6] text-black text-sm placeholder:text-sm px-4 rounded"
         />
       </div>
       {/* sub nav */}
@@ -42,13 +43,13 @@ const SubMenu = () => {
             </p>
           </div>
         </div>
-        <div className="order-3 sm:order-none flex justify-between items-center w-full sm:w-[156px] h-[46px] rounded-full border px-8 mt-4 sm:mt-0">
-          <button className="w-[32px] h-[32px] rounded-full bg-[#ff9900]">
-            -
+        <div className="flex items-center border h-fit self-end w-3/12 justify-between p-1 rounded-full font-semibold">
+          <button className="w-[32px] h-[32px] rounded-full bg-[#ff9900] flex items-center justify-center text-white">
+            <CgMathMinus />
           </button>
           <p>2</p>
-          <button className="w-[32px] h-[32px] rounded-full bg-[#ff9900]">
-            +
+          <button className="w-[32px] h-[32px] rounded-full bg-[#ff9900] flex items-center justify-center text-white">
+            <CgMathPlus />
           </button>
         </div>
       </div>

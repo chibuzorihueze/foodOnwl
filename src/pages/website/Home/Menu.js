@@ -97,6 +97,7 @@ const Menu = () => {
                 </div>
               </div>
               <Review />
+              <SubMenu />
             </div>
             {/* <div className="mx-auto my-auto relative w-full">
               <img
