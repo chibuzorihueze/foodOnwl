@@ -54,7 +54,7 @@ const Menu = () => {
                     <AiOutlineHeart size={25} />
                   </div>
                 </div>
-                <div className="flex justify-between items-start flex-col sm:flex-row border">
+                <div className="flex justify-between items-start flex-col sm:flex-row">
                   <div className="my-1 sm:my-0">
                     <div>
                       <p className="flex items-center space-x-2 ">
@@ -68,7 +68,7 @@ const Menu = () => {
                       <RiErrorWarningFill size={15} />
                       <span className="text-xs">More information</span>
                     </div>
-                    <div className="flex tems-center space-x-2 border p-2 rounded-full bg-[#ff9900] text-[#fff]">
+                    <div className="flex tems-center space-x-2  p-2 rounded-full bg-[#ff9900] text-[#fff] self-end">
                       <RiUserAddFill size={15} />
                       <span className="text-xs">Group Order</span>
                     </div>
@@ -96,6 +96,7 @@ const Menu = () => {
                   </div>
                 </div>
               </div>
+              <Review />
             </div>
             {/* <div className="mx-auto my-auto relative w-full">
               <img

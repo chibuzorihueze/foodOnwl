@@ -1,56 +1,54 @@
 import React from "react";
+import { AiFillStar } from "react-icons/ai";
+import Glider from "react-glider";
+import "glider-js/glider.min.css";
+
+const rating = [
+  {
+    id: 1,
+    title: "Philip Bassey",
+    date: "| 29/11/22",
+    comments: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+  },
+];
 
 const Review = () => {
   return (
     <div className="w-full">
-      <div className="w-full flex-row space-x-8 border-t mt-6 space-y-2 mb-6">
+      <div className="border-t mt-6 space-y-2 mb-6">
         <h3 className="font-bold text-2xl mt-6">User Reviews</h3>
-        <div>
+        <div className="flex items-center">
+          <AiFillStar />
           <p>4.5 (300+ ratings)</p>
         </div>
       </div>
-
-      <div className="w-full">
-        <div className="overflow-x-scroll whitespace-no-wrap">
-          <div className="w-400 flex flex-no-wrap space-x-8">
-            <div className="w-256 h-167 border overflow-hidden">
-              <div>
-                <h1>Philip Bassey</h1>
-                <p>| 29/11/22</p>
-              </div>
-              <div>
-                <p class="whitespace-normal">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                </p>
-              </div>
+      <Glider
+        draggable
+        hasArrows
+        slidesToShow={3}
+        slidesToScroll={2}
+        itemWidth={300}
+      >
+        {[1, 2, 3, 4, 5, 6, 7].map(({ id, title, date, comments }) => (
+          <div className="border mr-5 px-4 py-3 space-y-2">
+            <div>
+              <h3 className="font-semibold">Philip Bassey</h3>
+              <p className="flex items-center">
+                {[1, 2, 3, 4, 5].map(() => (
+                  <AiFillStar />
+                ))}
+                | 29/11/22
+              </p>
             </div>
-            <div className="w-256 h-167 border overflow-hidden">
-              <div>
-                <h1>Philip Bassey</h1>
-                <p>| 29/11/22</p>
-              </div>
-              <div>
-                <p class="whitespace-normal">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-    
-                </p>
-              </div>
+            <div>
+              <p class="whitespace-normal text-sm">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae,
+                veritatis.
+              </p>
             </div>
-            <div className="w-256 h-167 border overflow-hidden">
-              <div>
-                <h1>Philip Bassey</h1>
-                <p>| 29/11/22</p>
-              </div>
-              <div>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                </p>
-              </div>
-            </div>
-            {/* <!-- Add more boxes as needed --> */}
           </div>
-        </div>
-      </div>
+        ))}
+      </Glider>
     </div>
   );
 };
