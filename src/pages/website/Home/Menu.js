@@ -43,7 +43,9 @@ const Menu = () => {
                   <div>
                     <h3 className="font-semibold text-3xl">Chicken Republic</h3>
                     <div className="flex items-center space-x-2 text-xs my-1">
-                      <p className="flex items-center">Chicken Republic |</p>
+                      <p className="flex items-center text-[#828282] font-semi-bold">
+                        Chicken Republic |
+                      </p>
                       <p className="font-semibold flex items-center justify-center space-x-2">
                         <AiFillStar /> <span>4.5(300+)</span>
                       </p>
@@ -58,8 +60,11 @@ const Menu = () => {
                   <div className="my-1 sm:my-0">
                     <div>
                       <p className="flex items-center space-x-2 ">
-                        <AiFillClockCircle />
-                        <span>Open now | All day</span>
+                        <AiFillClockCircle color="#828282" />
+                        <span className="text-sm text-[#828282] font-semibold">
+                          <span className="text-[#229900]"> Open now</span> |
+                          All day
+                        </span>
                       </p>
                     </div>
                   </div>
