@@ -1,5 +1,6 @@
 import React from "react";
 import { AiFillStar } from "react-icons/ai";
+import { BsArrowRight } from "react-icons/bs";
 import Glider from "react-glider";
 import "glider-js/glider.min.css";
 
@@ -14,9 +15,15 @@ const rating = [
 
 const Review = () => {
   return (
-    <div className="w-full">
-      <div className="border-t mt-6 space-y-2 mb-6">
-        <h3 className="font-bold text-2xl mt-6">User Reviews</h3>
+    <div className="border-t-2 py-2">
+      <div className="mt-6 space-y-2 mb-6">
+        <div
+          className="flex items-center space-x-2
+        "
+        >
+          <h3 className="font-bold text-2xl">User Reviews</h3>
+          <BsArrowRight size={20} />
+        </div>
         <div className="flex items-center">
           <AiFillStar />
           <p>4.5 (300+ ratings)</p>

@@ -62,7 +62,10 @@ const SubMenu = () => {
         <div className="w-full mb-8">
           <ul className="flex space-x-6 whitespace-nowrap overflow-x-auto">
             {mealsMenu.map(({ id, title }) => (
-              <li key={id} className="cursor-pointer hover:text-[#ff9922] hover:border-b-4 hover:border-[#ff9922] font-semibold text-[#828282]">
+              <li
+                key={id}
+                className="cursor-pointer hover:text-[#ff9922] hover:border-b-4 hover:border-[#ff9922] font-semibold text-[#828282]"
+              >
                 {title}
               </li>
             ))}
@@ -71,8 +74,11 @@ const SubMenu = () => {
       </div>
 
       <div className="grid grid-cols-1 gap-y-6">
-        {[...meals].map(({ id, img, title, review, price }) => (
-          <div key={id} className="flex flex-col justify-between sm:flex-row">
+        {meals.map(({ id, img, title, review, price }) => (
+          <div
+            key={id}
+            className="flex flex-col justify-between sm:flex-row border rounded-lg p-2"
+          >
             <div className="flex space-x-2 ">
               <div className="">
                 <img src={img} alt="foodImage" className="h-full" />

@@ -14,7 +14,7 @@ const delivery = [
   {
     id: 2,
     price: "15 - 24mins",
-    title: "delivery time",
+    title: "Delivery time",
   },
 ];
 
@@ -47,9 +47,12 @@ const Menu = () => {
                         Chicken Republic |
                       </p>
                       <p className="font-semibold flex items-center justify-center space-x-2">
-                        <AiFillStar /> <span>4.5(300+)</span>
+                        <AiFillStar color="#ff9900" size={[15]} />
+                        <span className="font-semibold">
+                          4.5<span className="text-[#828282]">(300+)</span>
+                        </span>
                       </p>
-                      <p>| 2.2km</p>
+                      <p className="font-semibold text-[#828282]">| 2.2km</p>
                     </div>
                   </div>
                   <div>
@@ -69,24 +72,24 @@ const Menu = () => {
                     </div>
                   </div>
                   <div className="space-y-2 sm:flex items-center justify-between sm:flex-col hidden">
-                    <div className="flex tems-center space-x-2 border p-2 rounded-full">
-                      <RiErrorWarningFill size={15} />
+                    <div className="flex tems-center space-x-2 border-transparent shadow-sm cursor-pointer p-2 rounded-full bg-[#f2f2f2] text-[#333333] font-semibold">
+                      <RiErrorWarningFill color="#333333" size={15} />
                       <span className="text-xs">More information</span>
                     </div>
-                    <div className="flex tems-center space-x-2  p-2 rounded-full bg-[#ff9900] text-[#fff] self-end">
+                    <div className="flex tems-center space-x-2  p-2 rounded-full bg-[#ff9900] border-transparent shadow-sm cursor-pointer text-[#fff] self-end">
                       <RiUserAddFill size={15} />
-                      <span className="text-xs">Group Order</span>
+                      <span className="text-xs font-semibold">Group Order</span>
                     </div>
                   </div>
                 </div>
                 <div className="flex items-center">
                   {delivery.map(({ id, title, price }) => (
                     <div
-                      className="h-[70px] border w-[160px] flex flex-col justify-center items-center"
+                      className="h-[70px] border-transparent shadow-sm  w-[160px] flex flex-col justify-center items-center"
                       key={id}
                     >
-                      <h3 className="text-center">{price}</h3>
-                      <p className="text-center">{title}</p>
+                      <h3 className="text-center font-semibold">{price}</h3>
+                      <p className="text-center text-[#828282]">{title}</p>
                     </div>
                   ))}
                 </div>
