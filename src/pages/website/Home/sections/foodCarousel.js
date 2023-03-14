@@ -1,8 +1,8 @@
-import React from "react";
-import { Splide, SplideSlide } from "@splidejs/react-splide";
+import React, { useRef } from "react";
 import "@splidejs/splide/dist/css/themes/splide-default.min.css";
 import { Sandwich } from "../../../../assets/images";
 import { Splide1, Splide2 } from "../../../../assets/images/home/Splideimg";
+import Slider from "react-slick";
 
 const foodItems = [
   {
@@ -32,39 +32,68 @@ const foodItems = [
   },
 ];
 
+function SampleNextArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{
+        ...style,
+        display: "block",
+        background: "red",
+        position: "absolute",
+        left: 50,
+        top: 220,
+      }}
+      onClick={onClick}
+    />
+  );
+}
+
+function SamplePrevArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{
+        ...style,
+        display: "block",
+        background: "green",
+        position: "absolute",
+        left: 10,
+        top: 220,
+        zIndex: 30,
+      }}
+      onClick={onClick}
+    />
+  );
+}
+
 const FoodCarousel = () => {
-  const options = {
-    type: "loop",
-    perPage: 2,
-    perMove: 1,
-    gap: "1rem",
-    pagination: false,
-    autoplay: true,
-    pauseOnHover: true,
-    breakpoints: {
-      768: {
-        perPage: 2,
-      },
-      576: {
-        perPage: 1,
-      },
-    },
+  const settings = {
+    dots: true,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
   };
 
   return (
-    <Splide options={options}>
-      {foodItems.map((foodItem) => (
-        <SplideSlide key={foodItem.id}>
-          <div className="w-[379px] h-[175px] flex justify-center items-center ml-4">
+    <>
+      <Slider {...settings} className="border">
+        {foodItems.map(({ id, imgSrc, title }) => (
+          <div className="w-[379px] h-[200px] flex justify-center items-center ml-4d">
             <img
-              src={foodItem.imgSrc}
-              alt={foodItem.title}
-              className="w-full h-auto"
+              src={imgSrc}
+              alt={title}
+              className="w-full h-full object-cover"
             />
           </div>
-        </SplideSlide>
-      ))}
-    </Splide>
+        ))}
+      </Slider>
+    </>
   );
 };
 

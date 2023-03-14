@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -25,7 +25,7 @@
     font-family: montserrat;
   }
 
-  body{
+  body {
     padding-bottom: 200px;
   }
 }
@@ -42,6 +42,21 @@
     background-size: cover;
   }
   /* End of Hero Section */
+  .custom-btn {
+    position: absolute;
+    top: 50%;
+    right: 2rem;
+    transform: translateY(-50%);
+    background-color: #f00;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    z-index: 1;
+  }
+  /* .next-arr {
+    display: block;
+    background: red;
+  } */
 }
 
 @layer utilities {

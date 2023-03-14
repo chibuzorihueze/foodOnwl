@@ -20,7 +20,9 @@ const Home = () => {
             <div className="heading flex items-center justify-between">
               <div className="flex items-center">
                 <HiLocationMarker size={30} />
-                <p className="font-semibold text-xl">Adewunmi Adeleke, Ajah</p>
+                <p className="font-semibold text-xs sm:text-xl">
+                  Adewunmi Adeleke, Ajah
+                </p>
               </div>
               <img
                 src={ChangeLocationImg}

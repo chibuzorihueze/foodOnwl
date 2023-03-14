@@ -21,16 +21,18 @@ const foodCategories = [
 ];
 
 const Categories = () => (
-  <section className="categories on_container py-10">
+  <section className="categories on_container py-20 sm:py-10">
     <h3 className="font-semibold text-lg">Categories</h3>
-    <div className="categories__list grid grid-cols-8 gap-x-6 my-4 border-b border-[#e0e0e0] pb-12 overflow-x-auto ">
+    <div className="categories__list grid grid-cols-8 gap-x-24 sm:gap-x-6 my-4 border-b border-[#e0e0e0] sm:pb-12 overflow-x-scroll lg:overflow-hidden px-5">
       {foodCategories.map(({ id, title, imgSrc }) => (
         <div
-          className="sm:w-30 h-[100px] rounded w-30 flex--col-center cursor-pointer text-sm gap-y-2 bg-[#f6f6f6] min-w[100%]"
+          className="w-30 h-[100px] rounded flex--col-center cursor-pointer text-sm gap-y-2 bg-[#f6f6f6] border "
           key={id}
         >
-          <img src={imgSrc} alt={title} />
-          {title}
+          <div>
+            <img src={imgSrc} alt={title} />
+          </div>
+          <p className="text-xs sm:text-sm">{title}</p>
         </div>
       ))}
     </div>
